@@ -1,0 +1,45 @@
+Commands	Details
+git branch -m <old_name> <new_name>
+git branch -m <new_name>	Rename branch
+if is that current branch
+git branch -d <branch_name>
+git branch -D <branch_name>
+git push origin --delete <branch_name>	Delete local branch
+Force delete local branch
+Delete remote branch
+git fetch origin
+git checkout --track origin/<branch_name>	Updates your remote references
+Checkout  remote branch directly 
+git diff	Display changes from unstaged files
+git diff --cached	Display changes from staged files
+git rm --cached <file_name>	To untrack already tracked files
+git log -p 	Shows log with diff
+git clean -f	Remove untracked files from app folder
+git commit --amend	To edit last commit message
+git reset HEAD <file_name>	Unstaging a staged file
+git checkout --<file_name>	Revert changed to last commit
+git remote -v	Showing your remotes
+git remote add <name> <url>	Adding remote repositories 
+git remote rm <name>
+git remote rename <old_name> <new_name>	Remove remote
+Rename remote
+git branch -v	To see the last commit on each branch
+git branch --merged	To see which branches are already merged into the branch you’re on
+git branch --no-merged	To see all the branches that contain work you haven’t yet merged in
+git show <commit-hash>	Show diff of a specific commit
+git show master@{yesterday}
+git show master@{2.months.ago}	Show commits of a specific branch on specific date range
+git stash
+git stash list
+git stash apply
+git stash pop
+git stash apply stash@{2}
+git stash drop
+git stash drop stash@{0}	Saves current changes into a stash
+Shows list of stash's 
+Applies the last stash data, keep's data in stash 
+Applies the last stash data, remove's data from stash
+Apply sepcified stash from list of stash
+Drop last stash from stash list
+Drop a specfied stash from stash
+git stash branch <new-branch>	Create a branch from stash data
